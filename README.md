@@ -1,5 +1,5 @@
 # NeST — Nested Hierarchical Transformer
-
+![NeST Architecture and Pipeline ](assets/nested_architecture.png)
 A from-scratch PyTorch implementation of **NeST** (Nested Hierarchical Transformer), based on the paper:
 
 > *Nested Hierarchical Transformer: Towards Accurate, Data-Efficient and Interpretable Visual Understanding*  
