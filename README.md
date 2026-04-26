@@ -50,8 +50,6 @@ Nested-Hierarchial-Transformer-PyTorch/
 │   ├── aggregation.py      # BlockAggregation
 │   ├── hierarchy.py        # NestHierarchy
 │   └── nest.py             # NeST full model
-├── interpret/
-│   └── gradcat.py          # GradCAT + visualization
 ├── data/
 │   └── dataset.py          # CIFAR dataloaders
 ├── engine/
@@ -85,18 +83,7 @@ python train.py --dataset cifar100 --epochs 100 --lr 1e-3
 
 ---
 
-## GradCAT — interpretability
 
-GradCAT traces which image patch drove a prediction by walking down the NeST hierarchy tree from root to leaf, at each level picking the child node with the highest gradient-weighted activation.
-
-```python
-from interpret.gradcat import gradcat, visualize_gradcat
-
-path = gradcat(model, image, class_idx, blocks_per_side=4, device=device)
-visualize_gradcat(image, path, patch_size=2, image_size=32)
-```
-
----
 
 ## Architecture overview
 
@@ -129,10 +116,10 @@ Image (3, 32, 32)
 - `block()` and `unblock()` use `einops.rearrange` to preserve spatial neighbourhoods — a naive reshape would group non-adjacent patches together
 - `MHA` folds the block dimension into the batch dimension before attention (`B*num_blocks, seq_len, d`), so all blocks share weights automatically
 - `BlockAggregation` operates on the full image plane (not per-block) — this is critical for cross-block information mixing
-- GradCAT requires `retain_grad()` on intermediate feature maps before backward
 
 ---
-
+## TODO:
+- add GradCat method later as well as general interpretability for nested architecture
 ## Reference
 
 ```bibtex
