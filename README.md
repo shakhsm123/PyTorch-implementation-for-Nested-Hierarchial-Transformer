@@ -56,7 +56,7 @@ nest-pytorch/
 │   └── dataset.py          # CIFAR dataloaders
 ├── engine/
 │   └── train.py            # training loop
-├── train.py                # entry point
+├── train_script.py                # entry point
 ├── requirements.txt
 └── README.md
 ```
