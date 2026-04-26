@@ -20,9 +20,9 @@ Training NeST-T from scratch on CIFAR-10 and CIFAR-100 without distillation or p
 The paper reports 96.04% on CIFAR-10 and 78.69% on CIFAR-100 at 300 epochs with full augmentation — this implementation is a faithful reproduction of the core architecture.
 
 ---
+![NeST block aggregation principle ](assets/nested_aggregation.png)
 
 ## What makes NeST different
-![NeST block aggregation principle ](assets/nested_aggregation.png)
 
 
 Standard ViT runs self-attention between every pair of patches — O(N²) cost, and no built-in sense of locality. NeST fixes this with three ideas:
