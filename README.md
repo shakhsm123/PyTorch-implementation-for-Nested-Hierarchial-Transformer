@@ -64,8 +64,8 @@ Nested-Hierarchial-Transformer-PyTorch/
 ## Install
 
 ```bash
-git clone https://github.com/shakhsm123/PyTorch-implementation-for-Nested-Hierarchial-Transformer
-cd PyTorch-implementation-for-Nested-Hierarchial-Transformer
+git clone https://github.com/shakhsm123/Nested-Hierarchial-Transformer-PyTorch
+cd Nested-Hierarchial-Transformer-PyTorch
 pip install -r requirements.txt
 ```
 
