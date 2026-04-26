@@ -38,7 +38,7 @@ The result is a model that converges faster, needs less data, and produces a nat
 ## Repo structure
 
 ```
-nest-pytorch/
+Nested-Hierarchial-Transformer-PyTorch/
 ├── configs/
 │   ├── cifar10.py          # CIFAR-10 config
 │   └── cifar100.py         # CIFAR-100 config
