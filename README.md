@@ -22,6 +22,8 @@ The paper reports 96.04% on CIFAR-10 and 78.69% on CIFAR-100 at 300 epochs with 
 ---
 
 ## What makes NeST different
+![NeST Architecture and Pipeline ](assets/nested_aggregation.png)
+
 
 Standard ViT runs self-attention between every pair of patches — O(N²) cost, and no built-in sense of locality. NeST fixes this with three ideas:
 
