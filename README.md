@@ -76,10 +76,10 @@ pip install -r requirements.txt
 
 ```bash
 # CIFAR-10
-python train.py --dataset cifar10 --epochs 100 --lr 1e-3
+python train_script.py --dataset cifar10 --epochs 100 --lr 1e-3
 
 # CIFAR-100
-python train.py --dataset cifar100 --epochs 100 --lr 1e-3
+python train_script.py --dataset cifar100 --epochs 100 --lr 1e-3
 ```
 
 ---
