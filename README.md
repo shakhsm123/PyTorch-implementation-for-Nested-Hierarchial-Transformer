@@ -66,8 +66,8 @@ nest-pytorch/
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nest-pytorch
-cd nest-pytorch
+git clone https://github.com/shakhsm123/PyTorch-implementation-for-Nested-Hierarchial-Transformer
+cd PyTorch-implementation-for-Nested-Hierarchial-Transformer
 pip install -r requirements.txt
 ```
 
